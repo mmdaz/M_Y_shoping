@@ -4,7 +4,5 @@ from authorization import views
 urlpatterns = [
     url(r'^register/$', views.register, name='register'),
     url(r'^login/$', views.login, name='login'),
-    url(r'^add/$', views.add, name='add'),
-
-
+    url(r'^add/$', views.add_user_to_db, name='add'),
 ]
