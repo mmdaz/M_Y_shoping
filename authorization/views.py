@@ -14,6 +14,7 @@ def register(request):
 
 @csrf_exempt
 def login(request):
+    # FIXME I dont like this way I want to handle login in this function.
     return render(request, 'authorization/login.html')
 
 
